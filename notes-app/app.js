@@ -45,20 +45,40 @@
 
 //challenge
 
-const chalk = require('chalk')
+// const chalk = require('chalk')
 
-const greenMsg = chalk.green('Success!')
-console.log(greenMsg)
-const boldMsg = chalk.bold.red('Error!')
-console.log(boldMsg)
-const bgMsg = chalk.underline.bgBlue('Hello!')
-console.log(bgMsg)
-const inverseMsg = chalk.inverse.blue('Hello!')
-console.log(inverseMsg)
+// const greenMsg = chalk.green('Success!')
+// console.log(greenMsg)
+// const boldMsg = chalk.bold.red('Error!')
+// console.log(boldMsg)
+// const bgMsg = chalk.underline.bgBlue('Hello!')
+// console.log(bgMsg)
+// const inverseMsg = chalk.inverse.blue('Hello!')
+// console.log(inverseMsg)
 
 //Global npm modules and nodemon
 
 //install npm i nodemon@2.0.7 -g
 
-const nodemonMsg = chalk.blue.inverse.bold('Test!')
-console.log(nodemonMsg)
+// const nodemonMsg = chalk.blue.inverse.bold('Test!')
+// console.log(nodemonMsg)
+
+//section 4
+
+//1. getting input from user
+// const command = process.argv[2]
+// console.log(process.argv)
+
+// if (command === 'add') {
+//   console.log('Adding note!')
+// } else if (command === 'remove') {
+//   console.log('Removing note!')
+// }
+
+//run node app.js add 
+
+//2. argument passing with yargs
+
+const yargs = require('yargs')
+console.log(process.argv)
+console.log(yargs.argv)
