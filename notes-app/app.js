@@ -57,3 +57,8 @@ const inverseMsg = chalk.inverse.blue('Hello!')
 console.log(inverseMsg)
 
 //Global npm modules and nodemon
+
+//install npm i nodemon@2.0.7 -g
+
+const nodemonMsg = chalk.blue.inverse.bold('Test!')
+console.log(nodemonMsg)
