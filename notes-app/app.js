@@ -152,6 +152,7 @@
 const { addNote } = require('./notes.js')
 const notes = require('./notes.js')
 const yargs = require('yargs')
+const chalk = require('chalk')
 
 yargs.command({
   command: 'add',
@@ -174,5 +175,26 @@ yargs.command({
 
 })
 
+//run node app.js add  --title="List" --body="Books" 
+
+//removing notes
+//challenge
+
+yargs.command({
+  command: 'remove',
+  describe: 'Removing a note',
+  builder: {
+    title: {
+      describe: 'Note title',
+      demandOption: true,
+      type: 'string'
+    }
+  },
+  handler: function (argv) {
+    notes.removeNote(argv.title)
+  }
+
+})
+//run node app.js remove  --title="t" 
 
 yargs.parse()
