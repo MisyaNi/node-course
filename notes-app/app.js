@@ -169,10 +169,9 @@ yargs.command({
       type: 'string'
     }
   },
-  handler: function (argv) {
+  handler(argv) {
     addNote(argv.title, argv.body)
   }
-
 })
 
 //run node app.js add  --title="List" --body="Books" 
@@ -190,9 +189,10 @@ yargs.command({
       type: 'string'
     }
   },
-  handler: function (argv) {
+  handler(argv) {
     notes.removeNote(argv.title)
   }
+
 
 })
 //run node app.js remove  --title="t" 
