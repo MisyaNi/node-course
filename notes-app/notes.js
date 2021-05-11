@@ -8,7 +8,9 @@ const addNote = (title, body) => {
   // const duplicateNotes = notes.filter((note) => note.title === title)
   //return false - filter will not keep duplicate array
   const duplicateNote = notes.find((note) => note.title === title)
-
+  //How To Debug
+  // debugger
+  //run node inspect app.js add --title="Course" --body="Node.js"
   // if (duplicateNotes.length === 0) {
   if (!duplicateNote) {
     notes.push({
