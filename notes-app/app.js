@@ -197,4 +197,13 @@ yargs.command({
 })
 //run node app.js remove  --title="t" 
 
+//list nodes
+
+yargs.command({
+  command: 'list',
+  describe: 'Note List',
+  handler() {
+    notes.listNotes()
+  }
+})
 yargs.parse()
